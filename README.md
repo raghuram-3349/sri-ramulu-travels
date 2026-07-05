@@ -1,1 +1,1 @@
-# sri-ramulu-travels
+# kurnool-travels
