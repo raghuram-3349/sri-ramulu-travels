@@ -4,62 +4,256 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SRI RAMULU TRAVELS | Kurnool</title>
-<meta name="description" content="SRI RAMULU TRAVELS - 10+ Years of Trusted Travel Experience in Kurnool. Innova Crysta & Toyota Etios for local and outstation trips.">
 
-<!-- Social share preview (WhatsApp / Facebook) -->
-<meta property="og:title" content="SRI RAMULU TRAVELS | Kurnool">
-<meta property="og:description" content="10+ Years of Trusted Travel Experience. Innova Crysta & Toyota Etios for local and outstation trips.">
-<meta property="og:image" content="images/innova.jpg">
-<meta property="og:type" content="website">
-
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚕</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#f4f4f4;color:#333}
-header{background:#0b5ed7;color:#fff;padding:40px 20px;text-align:center}
-header h1{font-size:42px}
-header p{margin-top:10px;font-size:18px}
-nav{background:#083b8a;padding:12px;text-align:center}
-nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:bold}
-section{padding:40px 20px;max-width:1100px;margin:auto}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.15)}
-.card img{width:100%;height:220px;object-fit:cover;display:block}
-.card h3{padding:15px}
-.card p{padding:0 15px 15px}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#0b5ed7,#1d9bf0);
+    color:white;
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
 .btn{
-display:inline-block;
-background:#25D366;
-color:#fff;
-padding:12px 22px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-margin:10px 5px;
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    margin:10px;
+    transition:.3s;
 }
-.call{background:#0b5ed7}
+
+.call{
+    background:white;
+    color:#0b5ed7;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    padding:18px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+nav a{
+    color:#222;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#0b5ed7;
+}
+
+/* SECTION */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#0b5ed7;
+}
+
+/* ABOUT */
+
+.about{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    line-height:1.8;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0b5ed7;
+}
+
+/* SERVICES */
+
+.services{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.services ul{
+    list-style:none;
+}
+
+.services li{
+    padding:15px;
+    margin:10px 0;
+    background:#f1f5ff;
+    border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:linear-gradient(135deg,#0b5ed7,#1d9bf0);
+    color:white;
+    border-radius:20px;
+    padding:50px;
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+/* FOOTER */
+
 footer{
-background:#111;
-color:#fff;
-text-align:center;
-padding:20px;
-margin-top:40px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
 }
-ul li{margin:10px 0}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+}
 </style>
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
 <h1>SRI RAMULU TRAVELS</h1>
-<p><b>10+ Years of Trusted Travel Experience</b></p>
 
-<a class="btn call" href="tel:9440165214">📞 Call Now</a>
-<a class="btn" href="https://wa.me/919440165214">💬 WhatsApp</a>
+<p>
+10+ Years of Trusted Travel Experience
+<br>
+Safe • Comfortable • Affordable
+</p>
 
-</header>
+<a href="tel:9440165214" class="btn call">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/919440165214" class="btn whatsapp">
+💬 WhatsApp Booking
+</a>
+
+</div>
+
+</section>
+
+<!-- NAV -->
 
 <nav>
 <a href="#about">About</a>
@@ -68,79 +262,113 @@ ul li{margin:10px 0}
 <a href="#contact">Contact</a>
 </nav>
 
+<!-- ABOUT -->
+
 <section id="about">
-<h2>About Us</h2>
-<br>
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
 <p>
-Welcome to <b>SRI RAMULU TRAVELS</b>. We have been serving customers
-for more than <b>10 years</b> with safe, comfortable and affordable
+Welcome to <b>SRI RAMULU TRAVELS</b>.
+We have been serving customers for over
+<b>10 years</b> with safe, comfortable and affordable
 travel services.
-We provide local trips, outstation trips, airport pickup & drop,
-family tours and wedding transportation.
+
+We provide local trips, outstation trips,
+airport pickup & drop, family tours and
+wedding transportation services.
 </p>
+
+</div>
+
 </section>
 
+<!-- VEHICLES -->
+
 <section id="vehicles">
-<h2>Our Vehicles</h2>
-<br>
+
+<h2 class="section-title">Our Vehicles</h2>
 
 <div class="cards">
 
 <div class="card">
-<img src="images/innova.jpg" alt="Toyota Innova Crysta - Sri Ramulu Travels Kurnool" loading="lazy">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Toyota_Innova_Crysta.jpg">
+
+<div class="card-content">
+
 <h3>Toyota Innova Crysta</h3>
-<p>✔ 7 Seater<br>
-✔ AC<br>
+
+<p>
+✔ 7 Seater<br>
+✔ Fully AC<br>
 ✔ Luxury Family Travel<br>
-✔ Long Distance Trips</p>
+✔ Long Distance Trips
+</p>
+
+</div>
+
 </div>
 
 <div class="card">
-<img src="images/etios.jpg" alt="Toyota Etios - Sri Ramulu Travels Kurnool" loading="lazy">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Toyota_Etios.jpg">
+
+<div class="card-content">
+
 <h3>Toyota Etios</h3>
-<p>✔ Comfortable Sedan<br>
+
+<p>
+✔ Comfortable Sedan<br>
 ✔ AC<br>
-✔ Local & Outstation Travel</p>
+✔ Local & Outstation Travel
+</p>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
+
+<!-- SERVICES -->
 
 <section id="services">
 
-<h2>Our Services</h2>
-<br>
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
 
 <ul>
-<li>Airport Pickup & Drop</li>
-<li>Outstation Trips</li>
-<li>Local Taxi</li>
-<li>Temple Tours</li>
-<li>Wedding Travel</li>
-<li>Corporate Travel</li>
-<li>24×7 Cab Service</li>
+<li>✈ Airport Pickup & Drop</li>
+<li>🚗 Outstation Trips</li>
+<li>🏙 Local Taxi Service</li>
+<li>🛕 Temple Tours</li>
+<li>💍 Wedding Transportation</li>
+<li>🏢 Corporate Travel</li>
+<li>🕒 24×7 Cab Service</li>
 </ul>
+
+</div>
 
 </section>
 
+<!-- CONTACT -->
+
 <section id="contact">
+
+<div class="contact">
 
 <h2>Contact Us</h2>
 
-<br>
-
-<p><b>Phone:</b> 9440165214</p>
-<p><b>Alternate:</b> 9182985515</p>
-
-<br>
-
-<p><b>WhatsApp:</b> 9440165214</p>
-
-<br>
+<p>📞 9440165214</p>
+<p>📞 9182985515</p>
+<p>💬 WhatsApp: 9440165214</p>
 
 <p>
-<b>Address:</b><br>
 5/56 Ambedkar Nagar,<br>
 Dinnadevarapadu,<br>
 Kurnool - 518002,<br>
@@ -149,8 +377,15 @@ Andhra Pradesh
 
 <br>
 
-<a class="btn call" href="tel:9440165214">Call Now</a>
-<a class="btn" href="https://wa.me/919440165214">Book on WhatsApp</a>
+<a href="tel:9440165214" class="btn call">
+Call Now
+</a>
+
+<a href="https://wa.me/919440165214" class="btn whatsapp">
+Book on WhatsApp
+</a>
+
+</div>
 
 </section>
 
@@ -160,7 +395,7 @@ Andhra Pradesh
 
 <p>Your Journey, Our Responsibility</p>
 
-<p>© 2026 SRI RAMULU TRAVELS. All Rights Reserved.</p>
+<p>© 2026 SRI RAMULU TRAVELS</p>
 
 </footer>
 
